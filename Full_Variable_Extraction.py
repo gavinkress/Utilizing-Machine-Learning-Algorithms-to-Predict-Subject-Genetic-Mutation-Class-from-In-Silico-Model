@@ -1,3 +1,7 @@
+#===============================
+# AUTHOR: Gavin Kress NeuroDetect Inc.
+# Date: 10/5/2022
+
 import numpy as np
 import openpyxl
 import pandas as pd
