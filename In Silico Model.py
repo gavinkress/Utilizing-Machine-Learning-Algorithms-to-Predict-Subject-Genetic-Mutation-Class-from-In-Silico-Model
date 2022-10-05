@@ -1,3 +1,7 @@
+#===============================
+# AUTHOR: Gavin Kress NeuroDetect Inc.
+# Date: 10/5/2022
+
 from brian2 import *
 import numpy as np
 import matplotlib as mpl
