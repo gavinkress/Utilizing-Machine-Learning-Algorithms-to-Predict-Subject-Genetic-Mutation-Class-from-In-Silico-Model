@@ -743,17 +743,17 @@ def Create_and_fit_LightGBM(Training_Models, X, threshold: float):
 
 
 
-for i in tqdm(range(1000)):
+for i in tqdm(range(100)):
      Train_Serial_NN(50, X, verbose='off', threshold=0)
 
-for i in tqdm(range(5000)):
+for i in tqdm(range(100)):
     Tree = Create_and_fit_Decision_Tree(50, X, plot='save', threshold = 0, verbose='off')
 
-for i in tqdm(range(50000)):
+for i in tqdm(range(100)):
     SVM = Create_and_fit_Support_Vector_Machine(50, X, plot='save', threshold = 0, verbose='off', scale=False)
 
-for i in tqdm(range(1000000)):
+for i in tqdm(range(100)):
     GNB = Create_and_fit_Naive_Bays(50, X, plot='save', threshold = 0, verbose='off', type = 'Gaussian')
 
-for i in tqdm(range(20000)):
+for i in tqdm(range(100)):
     GBDT = Create_and_fit_LightGBM(50, X, threshold=0)
